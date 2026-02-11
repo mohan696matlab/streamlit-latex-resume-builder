@@ -34,8 +34,6 @@ def escape_latex(text: str) -> str:
         '$': r'\$',
         '#': r'\#',
         '_': r'\_',
-        '{': r'\{',
-        '}': r'\}',
         '~': r'\textasciitilde{}',
         '^': r'\^{}',
     }
@@ -304,7 +302,7 @@ def generate_latex_cv(json_data: dict,
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-1pt}}
 \renewcommand{\labelitemii}{$\circ$}
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*, label={}]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-10pt}}
 \newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*, label={}]}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 \definecolor{linkcolor}{rgb}{0.0, 0.0, 1.0}
